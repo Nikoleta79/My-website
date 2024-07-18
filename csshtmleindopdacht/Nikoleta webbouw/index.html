@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./img/logofile.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Nikoleta webbouw</title>
+    </head>
+<body class="grid-container">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="./img/logofile.png" alt="Logo" class="logo-image">
+                </a>
+                <span class="logo-text">Webbouw</span>
+            </div>
+            <div class="navigation_container">
+                <button class="hamburger" id="mobilemenu">&#9776;</button>
+                <div class="navigation_items" id="navigation_items">
+                    <a href="./index.html" class="underline active">Home</a>
+                    <a href="./over.html" class="underline">Over</a>
+                    <a href="./fotos.html" class="underline">Foto's</a>
+                    <div class="submenu">
+                        <a href="./artikel.html" class="underline">Artikel</a>
+                         <div class="subcontent">
+                                <a href="https://github.com/Nikoleta79" class="underline d-block">Github</a>
+                                <a href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/"
+                                    class="underline d-block">ICT</a>
+                        </div>
+                    </div>
+                    <a href="./contanct.html" class="underline">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <section class="achtergrond">            
+        </section>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="content_kontainer">
+                <section>
+                    <h3 class="text-black">Welkom op mijn website!</h3>
+                    <p>Ik ben bezig met het leren van het maken van websites via LOI en door het uitvoeren van verschillende projecten. Mijn leerproces omvat niet alleen het verkennen van technieken en tools, maar ook het actief samenwerken met anderen om websites te ontwikkelen. Als u iets specifieks nodig heeft of geïnteresseerd bent in mijn werk, aarzel dan niet om contact met mij op te nemen. Hieronder kunt u een aantal van mijn projecten bekijken en meer te weten komen over wat ik doe.</p>
+                </section>
+                <section>
+                    <p>Mijn passie voor webontwikkeling motiveert me om te blijven leren en te groeien in dit vakgebied. Ik hoop dat mijn werk anderen zal inspireren en van toegevoegde waarde zal zijn voor gebruikers. Door mijn toewijding en inzet wil ik websites maken die niet alleen functioneel zijn, maar ook esthetisch aantrekkelijk en gebruiksvriendelijk. Het streven naar kwaliteit en innovatie staat centraal in mijn ambitie om een gewaardeerde webontwikkelaar te worden.</p>
+                </section>
+            </div>
+        </div>    
+        <div class="foto">
+            <h4 class="text-black">Foto's, video etc</h4>
+            <div class="foto_kontainer">                
+                <img src="./img/stroopwafel.PNG" alt="stroopwafel" height="200" width="400">
+                <img src="./img/telefoon.PNG" alt="telefoon" height="200" width="400">
+                <img src="https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg" alt="webdesign" height="200" width="400">
+                <iframe src="https://www.youtube.com/embed/Sjhau5T-NVg?autoplay=1" width="400" height="225" allowfullscreen></iframe>
+                <video src="./img/pexels.mp4" autoplay muted controls preload="metadata" width="400" height="225"></video>
+            </div>
+        </div>        
+        <div class="foto_boxes">
+            <div class="foto_box_container">
+                <div class="foto_box">
+                    <img width="100" src="./img/mole.jpg" alt="mole">
+                    <div>
+                        <h4 class="text-black">Spelletjes</h4>
+                        <p>Wil je een spelletje spelen? Bekijk mijn spel op mijn Github <button id="moleButton">Hier</button></p>
+                    </div>
+                </div>
+                <div class="foto_box">
+                    <img width="100" src="./img/hond.jpg" alt="hond">
+                    <div>
+                        <h4 class="text-black">Hond kiezen</h4>
+                        <p>Of wil je een hond <a href="https://github.com/Nikoleta79/Dogapp">kiezen?</a></p>
+                    </div>
+                </div>
+                <div class="foto_box">
+                    <img width="100" src="./img/finder.jpg" alt="finder">
+                    <div>
+                        <h4 class="text-black">Foto zoeken</h4>
+                        <p>Een foto zoeken? <a href="https://github.com/Nikoleta79/Dograndom">Klik hier!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+    <footer>
+        <h5> &copy; Nikoleta - <span class="break">2024</span></h5>
+    </footer>
+    <script>
+        document.getElementById('moleButton').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = 'https://github.com/Nikoleta79/Molegame';
+        });
+
+        document.getElementById("mobilemenu").addEventListener("click", function() {
+            var navigationItems = document.getElementById("navigation_items");
+            if (navigationItems.style.display === "block") {
+                navigationItems.style.display = "none";
+            } else {
+                navigationItems.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
